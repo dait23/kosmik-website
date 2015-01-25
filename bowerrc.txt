@@ -1,0 +1,4 @@
+{
+  "directory": "_/plugins",
+  "analytics": false
+}

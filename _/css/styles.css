@@ -1,0 +1,78 @@
+/* Base css all element */
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto+Condensed:400,700,300);
+@import "module/base.css";
+@import "module/header.css";
+@import "module/footer.css";
+@import "module/sidebar.css";
+@import "module/modal.css";
+@import "module/jquery.fs.selecter.css";
+/* @import "module/grid.css";*/
+@import "module/hover.css";
+
+/* PAGE MOBILE CSS
+   ========================================================================== */
+
+
+
+/* PAGE CSS
+   ========================================================================== */
+
+@import "page/home.css";
+@import "page/premium.css";
+@import "page/landing.css";
+@import "page/creator.css";
+
+
+/*========================Body==================================================================================== */
+
+/* Extended base styles (site base specific)
+*****************************************************************/
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -350px; 
+  padding-top: 0px;
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+@media (min-width: 320px) and (max-width: 640px){
+ .page-wrap {
+  padding-top: 50px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 960px){
+ .page-wrap {
+  padding-top: 24px;
+}
+
+}
+
+.empty {
+  background-color: #FB6DD8;
+  text-align: center;
+  display: block;
+ height: 100px;
+  margin-top: 0px;
+  }
+
+.kosong{
+  width: 100%;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.row {
+  margin-bottom: 1em; }
+

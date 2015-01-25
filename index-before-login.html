@@ -21,23 +21,23 @@
     <link rel="stylesheet" href="_/plugins/Slidebars/development/slidebars.css">
         <!-- bxSlider CSS file -->
     <link href="_/plugins/bxslider/jquery.bxslider.css" rel="stylesheet" />
+    <link href="_/plugins/fakeLoader/fakeLoader.css" rel="stylesheet" >
 </head>
 <body>
-
+<div id="fakeloader"></div>
 <div id="sb-site">
 	<!-- HEADER --> 
 	<header>
-		<div class="sb-toggle-left left"><i class="fa fa-bars"></i><span id="m-hide">menu</span></div>
-		<div class="logo"><img src="_/img/logo.png" alt=""></div>
-		<div class="login"><a href="#">logout</span></a></div>
-    <div class="user"><div class="bublex">3</div><img src="_/img/icon/avatar.jpg" alt="" class="user-avatar"></div>
-    <div class="search"><i class="fa fa-search"></i><span id="m-hide">search</span></div>
-	</header>
+        <div class="sb-toggle-left left"><i class="fa fa-bars"></i><span id="m-hide">menu</span></div>
+        <div class="logo"><img src="_/img/logo.png" alt=""></div>
+        <div class="login"><a href="#" class="my_login_open"><i class="fa fa-lock"></i><span id="m-hide">login</span></a></div>
+        <div class="search"><i class="fa fa-search"></i><span id="m-hide">search</span></div>
+    </header>
 	<!-- END HEADER --> 
 		 <!-- Start Body --> 
-			<div class="page-wrap">
+            <div class="page-wrap">
             <!-- slider --> 
-				<div class="main-slider">
+                <div class="main-slider">
                         <ul class="bxslider">
                            <li>
                             <div class="container">
@@ -97,7 +97,7 @@
                   
                    <div class="row">
                     <div class="kolom-12 sub-header"><div class="line"></div><h1>NEW EPISODES</h1><span class="see-all"><a href="#">See all <i class="fa fa-angle-double-right"></i></a></span></div>
-                    </div>
+                </div>
                 
                 <div class="row">
                           
@@ -315,9 +315,7 @@
                 </div>
             </div>
          <!-- container --> 
-
-       
-                <div class="bar"></div> 
+               <div class="bar"></div> 
                <div class="banner">
                 <div class="container">
                     <div class="row">
@@ -329,25 +327,25 @@
                     </div>
                 </div>
                </div>
-               <div class="bar-slide"></div>
-      
-               
 
-           <div class="bannerads">
+            <!-- container  ads baner--> 
+
+            <div class="bannerads">
                 <div class="container">
                     <div class="row">
-                        <div class="kolom-12"><img src="_/img/banner/apps.png" alt="" width="70%"></div>
+                        <div class="kolom-12"><img src="_/img/banner/apps.png" alt=""></div>
                     </div>
                 </div>
                 
             </div>
 
+
           
        
 
             
-				
-			</div>
+                
+            </div>
 		 <!-- End Body --> 
 	<!-- FOOTER --> 
 	<!-- footer -->
@@ -425,21 +423,16 @@
     <div class="sb-slidebar sb-left sb-width-thin">
       <!-- Your left Slidebar content. -->
       <div class="side-logo"></div>
-     <ul class="side">
-              <li><a href="#" class="side-upload"><i class="fa fa-cloud-upload side-upload"></i>CREATE COMICS</a></li>
-              <li><a href="#"><i class="fa fa-star"></i>premium</a></li>
-              <li><a href="#"><i class="fa fa-book"></i>academy</a></li>
-              <li><a href="#"><i class="fa fa-magic"></i>creator</a></li>
-              <li><a href="#"><i class="fa fa-bookmark"></i>reading list</a></li>
-              <li><a href="#"><div class="buble">3</div><i class="fa fa-bell"></i>activity</a></li>
-              <li><a href="#"><i class="fa fa-money"></i>my wallets</a></li>
-              <li><a href="#"><i class="fa fa-cog"></i>setting</a></li>
-          </ul>
-    <ul class="social">
+            <ul class="side">
+                  <li><a href="#"><i class="fa fa-star"></i>premium</a></li>
+                  <li><a href="#"><i class="fa fa-book"></i>academy</a></li>
+                  <li><a href="#"><i class="fa fa-magic"></i>creator</a></li>
+            </ul>
+            <ul class="social">
                 <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
             </ul>
-    </div>
+     </div>
 <!-- jQuery -->
 <!-- login popup -->
 <div class="overlay"></div>
@@ -534,9 +527,27 @@
             </div>
     </div>
 </div>
-    <script src="_/plugins/jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="_/plugins/slick.js/slick/slick.min.js"></script>
+<!-- login popup -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="_/plugins/fakeLoader/fakeLoader.min.js"></script>
+    <script type="text/javascript">
+
+        $("#fakeloader").fakeLoader({
+
+        timeToHide:3000, //Time in milliseconds for fakeLoader disappear
+
+        zIndex:"9999999",//Default zIndex
+
+        spinner:"spinner1",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7'
+
+        bgColor:"#ff0066", //Hex, RGB or RGBA colors
+
+        //imagePath:"_/img/loader.png" //If you want can you insert your custom image
+
+        });
+
+    </script>
+
 
     <script src="_/plugins/bxslider/jquery.bxslider.js"></script>
 

@@ -1,0 +1,30 @@
+{
+  "name": "kosmik library",
+  "version": "1.0.0",
+  "dependencies": {
+  	"fontawesome": "latest",
+  	"animate.css": "latest",
+  	"jquery": "latest",
+  	"share-button": "latest",
+  	"picturePolyfill": "latest",
+  	"retina.js": "latest",
+  	"normalize.css": "latest",
+  	"modernizr": "latest",
+  	"nprogress": "latest",
+    "shufflejs" : "latest",
+    "moment" : "latest",
+    "FitText.js" : "latest",
+    "TextTailor.js" : "latest",
+    "css-modal": "latest",
+    "jquery.popup.overlay": "latest",
+    "angular-latest": "latest",
+    "jquery-unveil": "latest",
+    "Slidebars":"latest",
+    "jcarousel": "latest",
+    "slick.js" : "latest",
+    "fakeloader": "latest"
+  },
+  "devDependencies": {
+    "sass-mediaqueries": "latest"
+  }
+}

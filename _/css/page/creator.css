@@ -1,0 +1,146 @@
+.creator-banner {
+  width: 100%;
+  height: 450px;
+  background-color: #ccc;
+  margin-bottom: 0px; }
+
+.bar-creator {
+  width: 100%;
+  height: 90px;
+  background-color: #000;
+  float: left; }
+  .bar-creator .like {
+    margin-top: 25px;
+    padding-left: 50px; }
+  .bar-creator .share {
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 32px; }
+    .bar-creator .share a {
+      color: #fff;
+      margin-right: 10px; }
+
+.img-circle {
+  width: 140px;
+  height: 140px;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background-color: #0274bd;
+  -webkit-box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.17);
+  -moz-box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.17);
+  box-shadow: 4px 3px 5px rgba(0, 0, 0, 0.17);
+  margin-top: -25px; }
+
+.small {
+  width: 50px;
+  height: 50px;
+  margin: 0; }
+
+.left-creator .profil {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .left-creator .profil .title {
+    font-size: 18px;
+    color: #333;
+    text-transform: uppercase;
+    float: left;
+    width: 100%;
+    line-height: 25px; }
+  .left-creator .profil .join {
+    font-size: 11px;
+    font-family: "UniversLTStd-Light", "Open Sans", "Myriad Pro", sans-serif;
+    color: #a4a7a5;
+    text-transform: capitalize;
+    margin-bottom: 10px; }
+.left-creator .bio {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  .left-creator .bio .line {
+    width: 50px;
+    height: 15px;
+    background: url(../../img/bar.png) no-repeat right #fc0fc0;
+    float: left; }
+  .left-creator .bio h1 {
+    color: #666;
+    margin-left: 0px;
+    text-align: left;
+    float: left;
+    line-height: 12px;
+    font-family: "UniversLTStd-Light", "Open Sans", "Myriad Pro", sans-serif;
+    font-size: 14px;
+    line-height: 14px; }
+  .left-creator .bio i {
+    float: left;
+    margin-right: 10px;
+    font-size: 16px; }
+.left-creator .inside {
+  height: auto;
+  min-height: 250px;
+  margin-top: 10px;
+  width: 80%; }
+  .left-creator .inside .detail-bio {
+    background-color: #f2f2f2;
+    min-height: 200px;
+    height: auto; }
+  .left-creator .inside ul.read-list {
+    margin-left: 0;
+    list-style: none; }
+    .left-creator .inside ul.read-list li {
+      padding: 0px;
+      background-color: #f2f2f2; }
+      .left-creator .inside ul.read-list li img {
+        margin: 8px;
+        float: left;
+        display: block; }
+      .left-creator .inside ul.read-list li .detail .title {
+        padding: 6px 0px 0px 10px;
+        font-size: 12px;
+        color: #fc0fc0;
+        text-align: left;
+        text-transform: capitalize; }
+      .left-creator .inside ul.read-list li .detail .time {
+        font-size: 11px;
+        color: #777777;
+        text-align: left;
+        text-transform: capitalize;
+        padding-left: 10px;
+        font-family: "UniversLTStd-Light", "Open Sans", "Myriad Pro", sans-serif; }
+      .left-creator .inside ul.read-list li .detail .author {
+        font-size: 12px;
+        color: #666;
+        text-transform: uppercase;
+        margin-left: 10px; }
+
+.right-creator ul.share-list {
+  list-style: none; }
+  .right-creator ul.share-list li {
+    border-bottom: 1px solid #ccc;
+    margin-top: 20px; }
+    .right-creator ul.share-list li .user {
+      font-size: 14px;
+      color: #333;
+      text-align: left;
+      text-transform: capitalize; }
+      .right-creator ul.share-list li .user span {
+        color: #666;
+        font-size: 10px;
+        margin-left: 20px; }
+    .right-creator ul.share-list li .text {
+      font-size: 12px;
+      color: #666;
+      text-transform: capitalize;
+      font-family: "UniversLTStd-Light", "Open Sans", "Myriad Pro", sans-serif; }
+    .right-creator ul.share-list li .replay {
+      font-size: 10px;
+      color: #fc0fc0;
+      text-transform: uppercase;
+      font-family: "UniversLTStd-Light", "Open Sans", "Myriad Pro", sans-serif;
+      line-height: 30px; }
+
+.comic-list {
+  height: 200px;
+  background-color: #ccc; }
+
+/*# sourceMappingURL=creator.css.map */
