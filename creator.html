@@ -34,14 +34,14 @@
          <!-- Start Body --> 
             <div class="page-wrap">
             <!-- slider --> 
-                <div class="creator-banner"><img src="_/img/creator/banner/1.jpg" alt=""></div>
-                <div class="bar-creator">
+                <div class="creator-banner" style="background:url(_/img/creator/banner/1.jpg)no-repeat center center ;background-size:cover;"></div>
+                <div class="bar-creator" id="bar-tab">
                   <div class="container">
                     <div class="row">
                       <div class="kolom-3">
                          
-                         <div class="frame">
-                             <img src="_/img/creator/pic/1.jpg" class="img-circle" alt="">
+                         <div class="frame" id="frame">
+                             <img src="_/img/creator/pic/1.jpg" class="img-circle" alt="" id="small">
                          </div>
                         
                    
@@ -407,15 +407,39 @@
                                       <div class="kolom-12 sub-header"><div class="line"></div><h1>review</h1></div>
                                   </div>
                                   <div class="row">
-                                    <div class="kolom-4" >
-                                      <div style="height:100px; background:black;"></div>
+                                    <div class="kolom-6" >
+                                      <div class="box-review2">
+                                     <div class="row">
+                                       <div class="kolom-3 user"><img src="_/img/review/thumb/1.jpg" alt="" class="avatar-review"></div>
+                                       <div class="kolom-9 detail">
+                                         <div class="title">Zaphotoworks |</div>
+                                         <div class="rating">
+                                          <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                                      </div> 
+                                      <p>
+                                        Nice Comic..but I need more episode :D
+                                      </p>
+                                       </div>
+                                     </div>
+                                  </div>
                                     </div>
-                                    <div class="kolom-4" >
-                                      <div style="height:100px; background:black;"></div>
+                                    <div class="kolom-6" >
+                                     <div class="box-review2">
+                                     <div class="row">
+                                       <div class="kolom-3 user"><img src="_/img/review/thumb/1.jpg" alt="" class="avatar-review"></div>
+                                       <div class="kolom-9 detail">
+                                         <div class="title">Zaphotoworks |</div>
+                                         <div class="rating">
+                                          <span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></span>
+                                      </div> 
+                                      <p>
+                                        Nice Comic..but I need more episode :D
+                                      </p>
+                                       </div>
+                                     </div>
+                                  </div>
                                     </div>
-                                    <div class="kolom-4" >
-                                      <div style="height:100px; background:black;"></div>
-                                    </div>
+                                    
                                   </div>
 
                                </div>
@@ -572,17 +596,27 @@
 </div>
 <!-- login popup -->
     <script src="_/plugins/jquery/dist/jquery.min.js"></script>
+    <script>
+      $(window).scroll(function() {
+            if ($("header").offset().top > 500) {
+                $("header").hide();
+                $("#bar-tab").removeClass('bar-creator').addClass('bar-float2');
+                 $("#frame").css('background','none');
+                 $("#small").removeClass('img-circle').addClass('img-small');
+               
+            } else {
+                $("header").show();
+                $("#bar-tab").removeClass('bar-float2').addClass('bar-creator');
+                $("#frame").css('background-image', 'url("_/img/list.png")');
+                 $("#small").removeClass('img-small').addClass('img-circle');
+            }
+        });
+    </script>
     <script src="_/js/jquery.fs.selecter.js"></script>
 
     <script>
       $("select").selecter({
         label: "Sort By"
-      });
-    </script>
-    <script src="_/js/grid.js"></script>
-    <script>
-      $(function() {
-        Grid.init();
       });
     </script>
     <script src="_/plugins/jquery.popup.overlay/jquery.popupoverlay.js"></script>
